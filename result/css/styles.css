@@ -632,3 +632,25 @@ th {
   background: url("../images/iphone.png");
   width: 374px;
   height: 759px; }
+
+/* line 237, sass/_elements.scss */
+.prev {
+  display: block;
+  position: absolute;
+  background: url("../images/btn-right.png");
+  width: 77px;
+  height: 76px;
+  left: -85px;
+  top: calc(50% - 48px);
+  cursor: pointer; }
+
+/* line 249, sass/_elements.scss */
+.next {
+  display: block;
+  position: absolute;
+  background: url("../images/btn-left.png");
+  width: 77px;
+  height: 76px;
+  right: -85px;
+  top: calc(50% - 48px);
+  cursor: pointer; }
