@@ -408,36 +408,53 @@ td,
 th {
   padding: 0; }
 
-/* line 1, sass/_elements.scss */
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../../fonts/segoeui.ttf"); }
+
+@font-face {
+  font-family: "Segoe UI - Semi Bold";
+  src: url("../../fonts/seguisb.ttf"); }
+
+@font-face {
+  font-family: "Segoe UI small";
+  src: url("../../fonts/segoeuil.ttf"); }
+
+/* line 1, sass/imports/_elements.scss */
+body * {
+  font-family: "Segoe UI small", serif; }
+
+/* line 6, sass/imports/_elements.scss */
 .manage {
-  background: url("../images/header-back.png");
+  background: url("../../images/header-back.png");
   width: 100%;
   height: 968px; }
 
-/* line 8, sass/_elements.scss */
+/* line 12, sass/imports/_elements.scss */
 .header {
   padding-top: 15px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 15, sass/_elements.scss */
+/* line 19, sass/imports/_elements.scss */
 .logo {
   height: 56px;
   width: 56px;
-  background: url("../images/logo.png");
+  margin-left: 50px;
+  background: url("../../images/logo.png");
   background-position-x: -117px; }
 
-/* line 22, sass/_elements.scss */
+/* line 27, sass/imports/_elements.scss */
 .how-to-partner {
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
+  font-family: "Segoe UI", serif;
   line-height: 24px;
   border-bottom: 1px dashed;
   cursor: pointer; }
 
-/* line 31, sass/_elements.scss */
+/* line 36, sass/imports/_elements.scss */
 .container {
   width: 1133px;
   margin: 0 auto;
@@ -445,7 +462,7 @@ th {
   justify-content: space-between;
   align-items: center; }
 
-/* line 39, sass/_elements.scss */
+/* line 44, sass/imports/_elements.scss */
 .content-container {
   width: 1133px;
   margin: 0 auto;
@@ -453,16 +470,16 @@ th {
   justify-content: space-between;
   align-items: flex-start; }
 
-/* line 48, sass/_elements.scss */
+/* line 53, sass/imports/_elements.scss */
 .menu {
   position: relative;
   display: block;
   min-height: 55px;
   margin-top: 15px; }
-  /* line 53, sass/_elements.scss */
+  /* line 58, sass/imports/_elements.scss */
   .menu .container {
     min-height: 55px; }
-  /* line 56, sass/_elements.scss */
+  /* line 61, sass/imports/_elements.scss */
   .menu::before {
     content: '';
     position: absolute;
@@ -473,7 +490,7 @@ th {
     background-color: #000000;
     opacity: 0.56; }
 
-/* line 68, sass/_elements.scss */
+/* line 73, sass/imports/_elements.scss */
 .menu-item {
   text-transform: uppercase;
   color: #ffffff;
@@ -482,38 +499,42 @@ th {
   line-height: 24px;
   position: relative;
   z-index: 1; }
+  /* line 81, sass/imports/_elements.scss */
+  .menu-item.active {
+    font-family: "Segoe UI - Semi Bold", serif; }
 
-/* line 78, sass/_elements.scss */
+/* line 87, sass/imports/_elements.scss */
 .phone {
   color: #ffffff;
   font-size: 26px;
-  font-weight: 400;
+  font-family: "Segoe UI", serif;
   line-height: 24px;
   text-transform: uppercase;
   position: relative; }
-  /* line 85, sass/_elements.scss */
+  /* line 94, sass/imports/_elements.scss */
   .phone span {
-    font-weight: 600; }
-  /* line 89, sass/_elements.scss */
+    font-family: "Segoe UI - Semi Bold", serif; }
+  /* line 98, sass/imports/_elements.scss */
   .phone::before {
     content: '';
     display: block;
     position: absolute;
     width: 29px;
     height: 27px;
-    background: url("../images/phone.png");
+    background: url("../../images/phone.png");
     left: -36px;
     top: -2px; }
 
-/* line 101, sass/_elements.scss */
+/* line 110, sass/imports/_elements.scss */
 .email {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   position: relative;
-  margin-top: 7px; }
-  /* line 108, sass/_elements.scss */
+  margin-top: 7px;
+  font-family: "Segoe UI", serif; }
+  /* line 118, sass/imports/_elements.scss */
   .email::before {
     content: '';
     position: absolute;
@@ -522,11 +543,11 @@ th {
     display: block;
     width: 15px;
     height: 12px;
-    background: url("../images/icon-mail.svg");
+    background: url("../../images/icon-mail.svg");
     -webkit-background-size: cover;
     background-size: cover; }
 
-/* line 122, sass/_elements.scss */
+/* line 132, sass/imports/_elements.scss */
 .header-header {
   color: #ffffff;
   font-size: 48px;
@@ -535,7 +556,7 @@ th {
   height: 77px;
   line-height: 77px;
   margin-top: 84px; }
-  /* line 130, sass/_elements.scss */
+  /* line 140, sass/imports/_elements.scss */
   .header-header::before {
     content: '';
     display: block;
@@ -546,13 +567,13 @@ th {
     background-color: #8ba5f7;
     opacity: 0.16; }
 
-/* line 143, sass/_elements.scss */
+/* line 153, sass/imports/_elements.scss */
 .market, .appstore, .gplay {
   position: relative;
   width: 318px;
   height: 75px;
   margin-right: 20px; }
-  /* line 149, sass/_elements.scss */
+  /* line 159, sass/imports/_elements.scss */
   .market::before, .appstore::before, .gplay::before {
     content: '';
     z-index: 1;
@@ -568,7 +589,7 @@ th {
     -moz-border-radius: 10px;
     border-radius: 10px; }
 
-/* line 168, sass/_elements.scss */
+/* line 178, sass/imports/_elements.scss */
 .appstore::after {
   z-index: 2;
   content: '';
@@ -578,9 +599,9 @@ th {
   position: absolute;
   width: 288px;
   height: 75px;
-  background: url("../images/apple-text.png"); }
+  background: url("../../images/apple-text.png"); }
 
-/* line 183, sass/_elements.scss */
+/* line 193, sass/imports/_elements.scss */
 .gplay::after {
   z-index: 2;
   content: '';
@@ -590,65 +611,64 @@ th {
   position: absolute;
   width: 288px;
   height: 75px;
-  background: url("../images/gplay-text.png"); }
+  background: url("../../images/gplay-text.png"); }
 
-/* line 196, sass/_elements.scss */
+/* line 206, sass/imports/_elements.scss */
 .header-list {
   padding: 0;
   margin: 0 0 140px; }
 
-/* line 201, sass/_elements.scss */
+/* line 211, sass/imports/_elements.scss */
 .header-li {
   color: #ffffff;
   font-size: 30px;
-  font-weight: 300;
   line-height: 50px;
   list-style: none;
   display: block;
   position: relative;
   padding-left: 35px; }
-  /* line 210, sass/_elements.scss */
+  /* line 220, sass/imports/_elements.scss */
   .header-li::before {
     content: '';
     display: block;
     position: absolute;
     left: 0;
-    background: url("../images/icon-tick.svg");
+    background: url("../../images/icon-tick.svg");
     width: 25px;
     height: 26px;
     top: 10px; }
 
-/* line 222, sass/_elements.scss */
+/* line 232, sass/imports/_elements.scss */
 .left {
   display: flex;
   flex-wrap: wrap; }
 
-/* line 227, sass/_elements.scss */
+/* line 237, sass/imports/_elements.scss */
 .iphone {
   margin-top: 50px;
   flex-shrink: 0;
   position: relative;
   display: block;
-  background: url("../images/iphone.png");
+  background: url("../../images/iphone.png");
   width: 374px;
   height: 759px; }
 
-/* line 237, sass/_elements.scss */
+/* line 247, sass/imports/_elements.scss */
 .prev {
   display: block;
   position: absolute;
-  background: url("../images/btn-right.png");
+  background: url("../../images/btn-right.png");
   width: 77px;
   height: 76px;
   left: -85px;
   top: calc(50% - 48px);
   cursor: pointer; }
 
-/* line 249, sass/_elements.scss */
+/* line 259, sass/imports/_elements.scss */
 .next {
   display: block;
   position: absolute;
-  background: url("../images/btn-left.png");
+  background: url("../../images/btn-left.png");
   width: 77px;
   height: 76px;
   right: -85px;

@@ -6,6 +6,7 @@ var gulp   = require('gulp'),
 
 gulp.task('sass-watch', function() {
     gulp.watch(path + 'sass/*.scss', ['sass']);
+    gulp.watch(path + 'sass/imports/*.scss', ['sass']);
 });
 
 gulp.task('pug-watch', function() {

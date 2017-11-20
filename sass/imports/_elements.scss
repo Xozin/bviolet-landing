@@ -1,6 +1,10 @@
-.manage {
-  background: url("../images/header-back.png");
+body * {
+  font-family: "Segoe UI small", serif;
 
+}
+
+.manage {
+  background: url("../../images/header-back.png");
   width: 100%;
   height: 968px;
 }
@@ -15,14 +19,15 @@
 .logo {
   height: 56px;
   width: 56px;
-  background: url("../images/logo.png");
+  margin-left: 50px;
+  background: url("../../images/logo.png");
   background-position-x: -117px;
 }
 
 .how-to-partner {
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
+  font-family: "Segoe UI", serif;
   line-height: 24px;
   border-bottom: 1px dashed;
   cursor: pointer;
@@ -73,17 +78,21 @@
   line-height: 24px;
   position: relative;
   z-index: 1;
+  &.active {
+    font-family: "Segoe UI - Semi Bold", serif;
+
+  }
 }
 
 .phone {
   color: #ffffff;
   font-size: 26px;
-  font-weight: 400;
+  font-family: "Segoe UI", serif;
   line-height: 24px;
   text-transform: uppercase;
-  position: relative;
+  position: relative; 
   span {
-    font-weight: 600;
+    font-family: "Segoe UI - Semi Bold", serif;
   }
 
   &::before {
@@ -92,7 +101,7 @@
     position: absolute;
     width: 29px;
     height: 27px;
-    background: url("../images/phone.png");
+    background: url("../../images/phone.png");
     left: -36px;
     top: -2px;
   }
@@ -105,6 +114,7 @@
   line-height: 24px;
   position: relative;
   margin-top: 7px;
+  font-family: "Segoe UI", serif;
   &::before {
     content: '';
     position: absolute;
@@ -113,7 +123,7 @@
     display: block;
     width: 15px;
     height: 12px;
-    background: url("../images/icon-mail.svg");
+    background: url("../../images/icon-mail.svg");
     -webkit-background-size: cover;
     background-size: cover;
   }
@@ -174,7 +184,7 @@
     position: absolute;
     width: 288px;
     height: 75px;
-    background: url("../images/apple-text.png");
+    background: url("../../images/apple-text.png");
   }
 }
 
@@ -189,7 +199,7 @@
     position: absolute;
     width: 288px;
     height: 75px;
-    background: url("../images/gplay-text.png");
+    background: url("../../images/gplay-text.png");
   }
 }
 
@@ -201,18 +211,18 @@
 .header-li {
   color: #ffffff;
   font-size: 30px;
-  font-weight: 300;
   line-height: 50px;
   list-style: none;
   display: block;
   position: relative;
   padding-left: 35px;
+
   &::before {
     content: '';
     display: block;
     position: absolute;
     left: 0;
-    background: url("../images/icon-tick.svg");
+    background: url("../../images/icon-tick.svg");
     width: 25px;
     height: 26px;
     top: 10px;
@@ -229,7 +239,7 @@
   flex-shrink: 0;
   position: relative;
   display: block;
-  background: url("../images/iphone.png");
+  background: url("../../images/iphone.png");
   width: 374px;
   height: 759px;
 }
@@ -237,7 +247,7 @@
 .prev {
   display: block;
   position: absolute;
-  background: url("../images/btn-right.png");
+  background: url("../../images/btn-right.png");
   width: 77px;
   height: 76px;
   left: -85px;
@@ -249,7 +259,7 @@
 .next {
   display: block;
   position: absolute;
-  background: url("../images/btn-left.png");
+  background: url("../../images/btn-left.png");
   width: 77px;
   height: 76px;
   right: -85px;
