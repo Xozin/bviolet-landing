@@ -660,8 +660,8 @@ body * {
   background: url("../../images/btn-right.png");
   width: 77px;
   height: 76px;
-  left: -85px;
-  top: calc(50% - 48px);
+  left: -100px;
+  top: calc(50% - 58px);
   cursor: pointer; }
 
 /* line 259, sass/imports/_elements.scss */
@@ -671,6 +671,6 @@ body * {
   background: url("../../images/btn-left.png");
   width: 77px;
   height: 76px;
-  right: -85px;
-  top: calc(50% - 48px);
+  right: -100px;
+  top: calc(50% - 58px);
   cursor: pointer; }
