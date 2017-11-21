@@ -1,12 +1,110 @@
 body * {
   font-family: "Segoe UI small", serif;
+}
+
+body {
+  overflow-x: hidden;
 
 }
 
-.manage {
-  background: url("../../images/header-back.png");
+.header-image {
   width: 100%;
   height: 968px;
+}
+
+.krug {
+  height: 32px;
+  width: 32px;
+  background: url("../../images/krug.png");
+}
+
+.hbz {
+  width: 39px;
+  height: 40px;
+  background: url("../../images/hbz.png");
+}
+
+#scene {
+  position: absolute;
+  width: 1133px;
+  left: calc(50% - 580px);
+  margin: 0 auto;
+}
+
+.first-paralax {
+  margin-left: 360px;
+  margin-top: 227px;
+  @extend .hbz;
+
+}
+
+.second-paralax {
+  margin-left: 582px;
+  margin-top: 247px;
+  @extend .krug;
+}
+
+.third-paralax {
+  margin-left: -148px;
+  margin-top: 344px;
+  @extend .krug;
+
+}
+
+.fourth-paralax {
+  margin-left: 113px;
+  margin-top: 414px;
+  @extend .hbz;
+
+}
+
+.fifth-paralax {
+  margin-left: 543px;
+  margin-top: 460px;
+  @extend .krug;
+
+}
+
+.sixth-paralax {
+  margin-left: 38px;
+  margin-top: 661px;
+  @extend .krug;
+
+}
+
+.seventh-paralax {
+  margin-left: 568px;
+  margin-top: 666px;
+  @extend .hbz;
+
+}
+
+.header {
+  @extend .header-image;
+  background: url("../../images/css_sprites.png") -10px -10px;
+
+  &.manage {
+    @extend .header-image;
+    background-position: -10px -10px;
+  }
+
+  &.start {
+    @extend .header-image;
+    background-position: -1950px -10px;
+
+  }
+
+  &.time {
+    @extend .header-image;
+    background-position: -1950px -998px;
+
+  }
+
+  &.dishes {
+    @extend .header-image;
+    background-position: -10px -998px;
+
+  }
 }
 
 .header {
@@ -18,10 +116,9 @@ body * {
 
 .logo {
   height: 56px;
-  width: 56px;
+  width: 58px;
   margin-left: 50px;
-  background: url("../../images/logo.png");
-  background-position-x: -117px;
+  background: url("../../images/logo-white.svg");
 }
 
 .how-to-partner {
@@ -68,6 +165,26 @@ body * {
     background-color: #000000;
     opacity: 0.56;
   }
+  .menu-item:nth-child(3)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background-color: #ffffff;
+    left: calc(50% - 33px);
+    top: -16px;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("../../images/post-menu.png");
+    width: 1116px;
+    height: 19px;
+    left: calc(50% - 548px);
+    bottom: -25px;
+  }
 }
 
 .menu-item {
@@ -90,7 +207,7 @@ body * {
   font-family: "Segoe UI", serif;
   line-height: 24px;
   text-transform: uppercase;
-  position: relative; 
+  position: relative;
   span {
     font-family: "Segoe UI - Semi Bold", serif;
   }
@@ -134,20 +251,35 @@ body * {
   font-size: 48px;
   font-weight: 300;
   position: relative;
-  height: 77px;
   line-height: 77px;
   margin-top: 84px;
+  padding-bottom: 12px;
+  display: block;
   &::before {
     content: '';
     display: block;
     position: absolute;
     left: -500px;
     width: 1369px;
-    height: 77px;
+    height: 100%;
     background-color: #8ba5f7;
     opacity: 0.16;
   }
 
+  a {
+    color: #b7c0f3;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+  }
+
+}
+
+.changeble-plain-text {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 79px;
 }
 
 .market {
@@ -265,4 +397,70 @@ body * {
   right: -100px;
   top: calc(50% - 58px);
   cursor: pointer;
+}
+
+.video {
+  top: 94px;
+  position: absolute;
+  left: 24px;
+}
+
+.changable-content {
+  min-height: 540px;
+}
+
+.filler {
+  display: block;
+  height: 6378px;
+  background: url(../../images/fill.png) 50% -1022px;
+}
+
+.logo-container {
+  width: 1133px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.logo-bv {
+  width: 207px;
+  height: 200px;
+  left: 0;
+  top: 75px;
+  position: absolute;
+  background: url("../../images/logo.svg");
+}
+
+.social {
+  display: flex;
+}
+
+.social-link {
+  height: 32px;
+  width: 28px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.vk {
+  @extend .social-link;
+  background: url("../../images/VK.svg");
+}
+
+.ok {
+  @extend .social-link;
+
+  background: url("../../images/ODN.svg");
+}
+
+.fb {
+  @extend .social-link;
+
+  background: url("../../images/FB.svg");
+}
+
+.insta {
+  @extend .social-link;
+
+  background: url("../../images/INSTA.svg");
 }

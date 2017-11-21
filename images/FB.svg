@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1475742 1743088"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#FEFEFE;stroke-width:43616.5}
+    .fil1 {fill:#FEFEFE}
+    .fil0 {fill:#7687ED}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M0 0l1458528 0 17214 1743088 -1458527 0 -17215 -1743088z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1038765056">
+   <g style="clip-path:url(#id0)">
+    <image x="0" y="0" width="1475742" height="1743088" xlink:href="FB_Images\FB_ImgID1.png"/>
+   </g>
+  </g>
+  <circle class="fil0 str0" cx="730448" cy="748884" r="606866"/>
+  <path class="fil1" d="M545038 629565l-63 137444 75703 13c6083,-13 18885,-1796 23659,1707l-249 370672 136571 0 0 -370672 114445 0 5297 -33719c1496,-10994 2668,-24943 5111,-35202l10409 -70243 -135262 0c0,-33382 -250,-66839 -75,-100209 87,-15856 10172,-24644 20842,-29880 13774,-6756 25729,-5160 45561,-5160 16903,0 33819,-63 50722,0 21640,62 16903,5759 16903,-33819 0,-33819 0,-67637 0,-101443 -44128,0 -91970,-2219 -133916,1333 -41510,3503 -85712,27050 -108013,61068 -2219,3391 -4275,6956 -6494,10409 -31799,49550 -22089,138715 -22089,197701l-99062 0z"/>
+ </g>
+</svg>

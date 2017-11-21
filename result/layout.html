@@ -4,10 +4,17 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="header manage">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="../js/scripts.js"></script>
+  <div class="header start">
     <div class="container">
       <div class="logo"></div>
-      <div class="social"></div>
+      <div class="social">
+        <div class="vk"></div>
+        <div class="ok"></div>
+        <div class="fb"></div>
+        <div class="insta"></div>
+      </div>
       <div class="how-to-partner">Как стать нашим партнером</div>
       <div class="connect">
         <div class="phone">8-800-<span>2-343-2-00</span></div>
@@ -23,32 +30,45 @@
         <div class="menu-item">партнеры</div>
       </div>
     </div>
+    <div id="scene" data-relative-input="true">
+      <div class="first-paralax" data-depth="0.2"></div>
+      <div class="second-paralax" data-depth="0.3"></div>
+      <div class="third-paralax" data-depth="0.4"></div>
+      <div class="fourth-paralax" data-depth="0.5"></div>
+      <div class="fifth-paralax" data-depth="0.6"></div>
+      <div class="sixth-paralax" data-depth="0.7"></div>
+      <div class="seventh-paralax" data-depth="0.8"></div>
+    </div>
     <div class="content-container">
       <div class="left">
-        <h2 class="header-header">Управляйте расходами</h2>
-        <ul class="header-list">
-          <li class="header-li">Просматривайте акции  на Ваши любимые товары</li>
-          <li class="header-li">Теперь расходы всегда под Вашим контролем</li>
-          <li class="header-li">Установите лимит и покупайте только то, что нужно</li>
-          <li class="header-li">Сделайте поход в магазин рациональным!</li>
-        </ul>
+        <div class="changable-content">
+          <h2 class="header-header">Открывайте новое</h2>
+          <ul class="header-list">
+            <li class="header-li">Новые вкусы и новые возможности</li>
+            <li class="header-li">Изучайте товары, сканируя штрих-код</li>
+            <li class="header-li">Получайте персоональные предложения</li>
+            <li class="header-li">Сделайте вашу жизнь ярче!</li>
+          </ul>
+        </div>
         <div class="appstore">
           <div class="apple-logo"></div>
         </div>
         <div class="gplay"></div>
       </div>
       <div class="iphone">
-        <div class="prev">
-          <!--<video class="vjs-tech" id="video-0_html5_api" tabindex="-1" preload="auto" src="blob:https://www.dropbox.com/6533afd5-1b97-4a3e-b41d-4c7b4fa3f2de"><source src="https://www.dropbox.com/v/s/playlist/AIDwwu_Pt6nQ1aPxMDQg-RCYjbHnEIiD_tNOjxAALAh7sfPDw3Ru9QA3KrVBdqY7ceckDnOlhs4TzBZerfPpzBph5uG-g8TKKmtm29KeMMZwKFGe2_5n0Klp94IRAXvkYtm4BjEDWqH6YAzZ9O-UAAgfHedklRqJkI6mgrdfOWDRjtyOJpQzShcrEI7n9XuzCtYGC60TyGa8nvmQoe4QBb_2WVchYfPEuAxPUmcUWYo-z5vf5sBfRS0jOJGvYrmMUKD7Q1YDtVUbKuKnfELRbcQO-fKrwkKJfvPvNQfrs4LQ-qKvOD8VGGrgUlFj9NXsPNc" type="application/vnd.apple.mpegurl"></video>-->
-        </div>
-        <video class="video vjs-tech" id="video-0_html5_api" tabindex="-1" preload="auto" src="https://www.dropbox.com/6533afd5-1b97-4a3e-b41d-4c7b4fa3f2de">
-          <source src="https://www.dropbox.com/v/s/playlist/AIDwwu_Pt6nQ1aPxMDQg-RCYjbHnEIiD_tNOjxAALAh7sfPDw3Ru9QA3KrVBdqY7ceckDnOlhs4TzBZerfPpzBph5uG-g8TKKmtm29KeMMZwKFGe2_5n0Klp94IRAXvkYtm4BjEDWqH6YAzZ9O-UAAgfHedklRqJkI6mgrdfOWDRjtyOJpQzShcrEI7n9XuzCtYGC60TyGa8nvmQoe4QBb_2WVchYfPEuAxPUmcUWYo-z5vf5sBfRS0jOJGvYrmMUKD7Q1YDtVUbKuKnfELRbcQO-fKrwkKJfvPvNQfrs4LQ-qKvOD8VGGrgUlFj9NXsPNc" type="application/vnd.apple.mpegurl">
+        <div class="prev" id="prev"></div>
+        <video class="video" width="323" height="573" autoplay="" muted="">
+          <source src="http://iaroslavzhmak.name/zhmak2-0/media/cooktime/cook-scroll-web.mp4" type="video/mp4">
         </video>
-        <div class="next"></div>
+        <div class="next" id="next"></div>
       </div>
       <div class="tick"></div>
       <div class="tick"></div>
       <div class="tick"></div>
     </div>
   </div>
+  <div class="logo-container">
+    <div class="logo-bv"></div>
+  </div>
+  <div class="filler"></div>
 </body>

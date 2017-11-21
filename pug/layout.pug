@@ -3,10 +3,16 @@ head
   meta(charset="UTF-8")
   link(rel='stylesheet',href='css/styles.css')
 body
-  .header.manage
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
+  script(src="../js/scripts.js")
+  .header.start
     .container
       .logo
       .social
+        .vk
+        .ok
+        .fb
+        .insta
       .how-to-partner Как стать нашим партнером
       .connect
         .phone 8-800-
@@ -19,26 +25,39 @@ body
         .menu-item Результат
         .menu-item Отзывы
         .menu-item партнеры
+    #scene(data-relative-input="true")
+      .first-paralax(data-depth="0.2")
+      .second-paralax(data-depth="0.3")
+      .third-paralax(data-depth="0.4")
+      .fourth-paralax(data-depth="0.5")
+      .fifth-paralax(data-depth="0.6")
+      .sixth-paralax(data-depth="0.7")
+      .seventh-paralax(data-depth="0.8")
     .content-container
-      .left
-        h2.header-header Управляйте расходами
 
-        ul.header-list
-          li.header-li Просматривайте акции  на Ваши любимые товары
-          li.header-li Теперь расходы всегда под Вашим контролем
-          li.header-li Установите лимит и покупайте только то, что нужно
-          li.header-li Сделайте поход в магазин рациональным!
+      .left
+        .changable-content
+          h2.header-header
+            | Открывайте новое
+          ul.header-list
+            li.header-li Новые вкусы и новые возможности
+            li.header-li Изучайте товары, сканируя штрих-код
+            li.header-li Получайте персоональные предложения
+            li.header-li Сделайте вашу жизнь ярче!
         .appstore
           .apple-logo
         .gplay
       .iphone
-        .prev
-          //<video class="vjs-tech" id="video-0_html5_api" tabindex="-1" preload="auto" src="blob:https://www.dropbox.com/6533afd5-1b97-4a3e-b41d-4c7b4fa3f2de"><source src="https://www.dropbox.com/v/s/playlist/AIDwwu_Pt6nQ1aPxMDQg-RCYjbHnEIiD_tNOjxAALAh7sfPDw3Ru9QA3KrVBdqY7ceckDnOlhs4TzBZerfPpzBph5uG-g8TKKmtm29KeMMZwKFGe2_5n0Klp94IRAXvkYtm4BjEDWqH6YAzZ9O-UAAgfHedklRqJkI6mgrdfOWDRjtyOJpQzShcrEI7n9XuzCtYGC60TyGa8nvmQoe4QBb_2WVchYfPEuAxPUmcUWYo-z5vf5sBfRS0jOJGvYrmMUKD7Q1YDtVUbKuKnfELRbcQO-fKrwkKJfvPvNQfrs4LQ-qKvOD8VGGrgUlFj9NXsPNc" type="application/vnd.apple.mpegurl"></video>
-        video.video(class="vjs-tech" id="video-0_html5_api", tabindex="-1", preload="auto", src="https://www.dropbox.com/6533afd5-1b97-4a3e-b41d-4c7b4fa3f2de")
-          source(src="https://www.dropbox.com/v/s/playlist/AIDwwu_Pt6nQ1aPxMDQg-RCYjbHnEIiD_tNOjxAALAh7sfPDw3Ru9QA3KrVBdqY7ceckDnOlhs4TzBZerfPpzBph5uG-g8TKKmtm29KeMMZwKFGe2_5n0Klp94IRAXvkYtm4BjEDWqH6YAzZ9O-UAAgfHedklRqJkI6mgrdfOWDRjtyOJpQzShcrEI7n9XuzCtYGC60TyGa8nvmQoe4QBb_2WVchYfPEuAxPUmcUWYo-z5vf5sBfRS0jOJGvYrmMUKD7Q1YDtVUbKuKnfELRbcQO-fKrwkKJfvPvNQfrs4LQ-qKvOD8VGGrgUlFj9NXsPNc", type="application/vnd.apple.mpegurl")
-        .next
+        #prev.prev
+        video.video(width="323", height="573" autoplay="", muted="")
+          source(src="http://iaroslavzhmak.name/zhmak2-0/media/cooktime/cook-scroll-web.mp4", type="video/mp4")
+        #next.next
 
 
       .tick
       .tick
       .tick
+
+  .logo-container
+    .logo-bv
+  .filler
